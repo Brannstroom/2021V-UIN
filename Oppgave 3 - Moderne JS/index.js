@@ -41,7 +41,7 @@ try {
 		const addOne = x => x + 1;
 		
 		// Rewrite the line below to use template literals.
-		const greeting = 'Hello '+who+'! '+addOne(2)+' times.';
+		const greeting = `Hello ${who}! ${addOne(2)} times.`;
 
 		// Don't make changes below this line	
 		
@@ -55,10 +55,7 @@ try {
 	(function UseDefaultParameters() {
     
 		// Correct the syntax errors in the function.
-		function hello(who) {
-			if(!who) {
-				who = "World";
-			}
+		function hello(who = "World") {
 			return 'Hello ' + who + '!';
 		}
 
@@ -156,7 +153,7 @@ try {
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
 
-		var [a,b,c] = [arr[0], arr[2], arr.slice(3)];
+		const [a,b,c] = [arr[0], arr[2], arr.slice(3)];
 
 		// Don't make changes below this line	
 		
@@ -191,7 +188,7 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let [name, age, add] = [obj.name, obj.age, obj.add];
+		const {name, age, add} = obj;
 
 		// Don't make changes below this line	
 		
